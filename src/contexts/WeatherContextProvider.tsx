@@ -24,6 +24,7 @@ interface IWeatherContext {
   isCelsius?: boolean;
   setIsCelsius?: Dispatch<SetStateAction<boolean>>;
   currentWeather?: ICurrentWeather;
+  setCurrentWeather?: Dispatch<SetStateAction<boolean>>;
   hourlyWeather?: IHourlWeather[];
   fiveDaysForecast?: {[key: string]: IFiveDaysWeather}
 }
