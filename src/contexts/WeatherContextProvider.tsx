@@ -59,7 +59,7 @@ export const WeatherContextProvider: React.FC<PropsWithChildren> = ({ children }
         setFiveDaysForecast(fiveDaysWeather);
       })()
     }
-  }, [city]);
+  }, [city, isCelsius]);
 
   return (
     <WeatherContext.Provider value={{
